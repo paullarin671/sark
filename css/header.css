@@ -1,0 +1,423 @@
+/* media */
+/* ul steps */
+/* devices */
+/* ui kit - colors*/
+/* ui kit - z-index*/
+/* media */
+/* ul steps */
+/* media */
+/* ul steps */
+/* devices */
+/* ui kit - colors*/
+/* ui kit - z-index*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  font-family: Inter, sans-serif;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+h1 {
+  font-size: clamp(40px, 5vw, 80px);
+  line-height: 130%;
+  letter-spacing: -1px;
+  margin-bottom: clamp(16px, 1.8vw, 28px);
+}
+
+h2 {
+  font-size: clamp(32px, 3vw, 48px);
+  line-height: 125%;
+}
+
+.btn-red {
+  background: rgb(239, 68, 68);
+  color: white;
+}
+
+/* media */
+/* ul steps */
+/* devices */
+/* ui kit - colors*/
+/* ui kit - z-index*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  font-family: Inter, sans-serif;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus, a:active {
+  outline: none;
+}
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+h1 {
+  font-size: clamp(40px, 5vw, 80px);
+  line-height: 130%;
+  letter-spacing: -1px;
+  margin-bottom: clamp(16px, 1.8vw, 28px);
+}
+
+h2 {
+  font-size: clamp(32px, 3vw, 48px);
+  line-height: 125%;
+}
+
+.btn-red {
+  background: rgb(239, 68, 68);
+  color: white;
+}
+
+/* media */
+/* ul steps */
+/* devices */
+/* ui kit - colors*/
+/* ui kit - z-index*/
+/* media */
+/* ul steps */
+body.lock {
+  overflow: hidden;
+}
+
+.header__burger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 12px;
+  z-index: 10;
+}
+@media (min-width: 900px) {
+  .header__burger {
+    display: none;
+  }
+}
+.header__burger.active {
+  top: 8px;
+}
+.header__burger.active span {
+  transform: scale(0);
+}
+.header__burger.active:before {
+  background-color: white;
+  transform: rotate(45deg);
+  top: -4px;
+}
+@media (min-width: 900px) {
+  .header__burger.active:before {
+    background-color: rgb(18, 20, 29);
+  }
+}
+.header__burger.active:after {
+  background-color: white;
+  transform: rotate(-45deg);
+  bottom: 13px;
+}
+@media (min-width: 900px) {
+  .header__burger.active:after {
+    background-color: rgb(18, 20, 29);
+  }
+}
+.header__burger span {
+  position: absolute;
+  background-color: rgb(18, 20, 29);
+  left: 0;
+  width: 100%;
+  border-radius: 12px;
+  height: 0px;
+  transition: all 0.3s ease 0s;
+}
+.header__burger:before {
+  top: 0;
+}
+.header__burger:after {
+  bottom: 0;
+}
+.header__burger:before, .header__burger:after {
+  content: "";
+  background-color: rgb(18, 20, 29);
+  position: absolute;
+  border-radius: 12px;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 9;
+  position: fixed;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(18, 20, 29, 0.7);
+  padding: 5%;
+  transition: all 0.3s ease 0s;
+  overflow: auto;
+}
+.header__menu-pc {
+  display: none;
+}
+@media (min-width: 900px) {
+  .header__menu-pc {
+    display: block;
+  }
+}
+.header__menu.active {
+  left: 0%;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .header__list {
+    min-width: 450px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.header {
+  background: white;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .header {
+    padding: 30px 0;
+  }
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.header__link {
+  font-size: 26px;
+  line-height: 2.0769230769;
+  font-weight: 500;
+  color: white;
+}
+@media (min-width: 900px) {
+  .header__link {
+    color: rgb(18, 20, 29);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <title>modals</title>
+  </head>
+  <body>
+    <!-- modal -->
+    <button data-open-modal class="open">open modal</button>
+    <dialog data-modal class="modal">
+      <div class="modal-wrapper">
+        <span data-close-modal class="close material-symbols-outlined">
+          close
+        </span>
+        <span>This is a modal!</span>
+      </div>
+    </dialog>
+
+    <!-- dialog -->
+    <button data-open-dialog class="open">open dialog</button>
+    <dialog data-dialog>
+      <div class="modal-wrapper dialog-wrapper">
+        <span data-close-dialog class="close material-symbols-outlined">
+          close
+        </span>
+        <span>This is a dialog!</span>
+      </div>
+    </dialog>
+    <!-- scripts -->
+    <script src="/modal.js"></script>
+  </body>
+</html>

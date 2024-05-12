@@ -1,0 +1,37 @@
+// modal
+const openButton = document.querySelector("[data-open-modal]");
+const closeButton = document.querySelector("[data-close-modal]");
+const modal = document.querySelector("[data-modal]");
+// dialog
+const openDialogButton = document.querySelector("[data-open-dialog]");
+const closeDialogButton = document.querySelector("[data-close-dialog]");
+const dialog = document.querySelector("[data-dialog]");
+
+openButton.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+  modal.close();
+});
+
+// dialog
+openDialogButton.addEventListener("click", () => {
+  dialog.show();
+});
+
+closeDialogButton.addEventListener("click", () => {
+  dialog.close();
+});
+
+modal.addEventListener("click", (e) => {
+  const modalDimensions = modal.getBoundingClientRect();
+  if (
+    e.clientX < modalDimensions.left ||
+    e.clientX > modalDimensions.right ||
+    e.clientY < modalDimensions.top ||
+    e.clientY > modalDimensions.bottom
+  ) {
+    modal.close();
+  }
+});
